@@ -30,3 +30,11 @@ test('array contains no-number throws error', () => {
   expect(containsArray).toThrow(/number/)
   expect(containsFalsy).toThrow(/number/)
 })
+
+test('should give at least two arguments to perm', () => {
+  const test1 = () => {
+    const a = perm([1])
+    console.log(a)
+  }
+  expect(test1)
+})
